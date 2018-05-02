@@ -68,6 +68,7 @@ self.view.addSubview(marqueeView)
 图片
 
 ![picture.gif](https://upload-images.jianshu.io/upload_images/1085173-11111ffe222e7653.gif?imageMogr2/auto-orient/strip)
+[如果加载不出来，点这里查看](https://github.com/pujiaxin33/JXMarqueeView/blob/master/JXMarqueeView/Assets/picture.gif)
 
 自定义
 ![poetry.gif](https://upload-images.jianshu.io/upload_images/1085173-c197188ee4e4fb44.gif?imageMogr2/auto-orient/strip)
