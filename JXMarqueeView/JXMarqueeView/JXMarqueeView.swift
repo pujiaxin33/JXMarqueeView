@@ -8,18 +8,18 @@
 
 import UIKit
 
-enum JXMarqueeType {
+public enum JXMarqueeType {
     case left
     case right
     case reverse
 }
 
-class JXMarqueeView: UIView {
-    var marqueeType: JXMarqueeType = .left
-    var contentMargin: CGFloat = 12                     //两个视图之间的间隔
-    var frameInterval: Int = 1                          //多少帧回调一次，一帧时间1/60秒
-    var pointsPerFrame: CGFloat = 0.5                   //每次回调移动多少点
-    var contentView: UIView? {
+public class JXMarqueeView: UIView {
+    public var marqueeType: JXMarqueeType = .left
+    public var contentMargin: CGFloat = 12                     //两个视图之间的间隔
+    public var frameInterval: Int = 1                          //多少帧回调一次，一帧时间1/60秒
+    public var pointsPerFrame: CGFloat = 0.5                   //每次回调移动多少点
+    public var contentView: UIView? {
         didSet {
             self.setNeedsLayout()
         }
@@ -28,26 +28,26 @@ class JXMarqueeView: UIView {
     private var marqueeDisplayLink: CADisplayLink?
     private var isReversing = false
 
-    override func willMove(toSuperview newSuperview: UIView?) {
+    override open func willMove(toSuperview newSuperview: UIView?) {
         //骚操作：当视图将被移除父视图的时候，newSuperview就为nil。在这个时候，停止掉CADisplayLink，断开循环引用，视图就可以被正确释放掉了。
         if newSuperview == nil {
             self.stopMarquee()
         }
     }
 
-    init() {
+    public init() {
         super.init(frame: CGRect.zero)
 
         self.initializeViews()
     }
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
 
         self.initializeViews()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         self.initializeViews()
@@ -61,7 +61,7 @@ class JXMarqueeView: UIView {
         self.addSubview(containerView)
     }
 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
 
         guard let validContentView = contentView else {
@@ -96,11 +96,11 @@ class JXMarqueeView: UIView {
     }
 
     //如果你的contentView的内容在初始化的时候，无法确定。需要通过网络等延迟获取，那么在内容赋值之后，在调用该方法即可。
-    func reloadData() {
+    public func reloadData() {
         self.setNeedsLayout()
     }
 
-    func startMarquee() {
+    fileprivate func startMarquee() {
         self.stopMarquee()
 
         if marqueeType == .right {
@@ -114,12 +114,12 @@ class JXMarqueeView: UIView {
         self.marqueeDisplayLink?.add(to: RunLoop.main, forMode: .commonModes)
     }
 
-    func stopMarquee()  {
+   fileprivate  func stopMarquee()  {
         self.marqueeDisplayLink?.invalidate()
         self.marqueeDisplayLink = nil
     }
 
-    @objc private func processMarquee() {
+    @objc fileprivate func processMarquee() {
         var frame = self.containerView.frame
 
         switch marqueeType {
