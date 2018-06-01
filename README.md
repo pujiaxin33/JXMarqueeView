@@ -30,6 +30,13 @@ override func willMove(toSuperview newSuperview: UIView?) {
         }
     }
 ```
+
+## 配置
+1.手动配置
+  - 下载源码，将JXMarqueeView.swift拖入你的工程就可以使用了。
+2.Cocoapods
+  - 在你的Podfile文件写入`pod 'JXMarqueeView', '~> 0.0.4'`，然后pod install即可
+
 ## 使用
 ```swift
 //文字
