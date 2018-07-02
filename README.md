@@ -34,10 +34,12 @@ A powerful and easy to use marquee view.
 1. Manually
     - Download source code, drag JXMarqueeView.swift file into your project.
 2. Cocoapods
-> use_frameworks!
-> target '<Your Target Name>' do
-> pod 'JXMarqueeView'
-> end
+```ruby
+use_frameworks!
+target '<Your Target Name>' do
+    pod 'JXMarqueeView'
+end
+```
 
 # Usage
 
@@ -61,7 +63,7 @@ The view your need to marquee.
 
 When you customize complex content view, you need override `func sizeThatFits(_ size: CGSize) -> CGSize`,and return you correct content size.
 
-# Usage case 
+## Usage case 
 ```swift
 //text
 let label = UILabel()
@@ -83,8 +85,8 @@ marqueeView.marqueeType = .reverse
 self.view.addSubview(marqueeView)
 ```
 
-# Picture case preview
+### Picture case preview
 ![picture.gif](https://github.com/pujiaxin33/JXMarqueeView/blob/master/JXMarqueeView/Assets/picture.gif?raw=true)
 
-# Custom case preview
+### Custom case preview
 ![poetry.gif](https://upload-images.jianshu.io/upload_images/1085173-c197188ee4e4fb44.gif?imageMogr2/auto-orient/strip)
