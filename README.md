@@ -16,10 +16,16 @@ A powerful and easy to use marquee view.
 # Preview
 
 `JXMarqueeType.left`：From right to left
+
+![left.gif](https://upload-images.jianshu.io/upload_images/1085173-712f04ce62c1a3bc.gif?imageMogr2/auto-orient/strip)
+
 `JXMarqueeType.right`：From left to right
+
+![right.gif](https://upload-images.jianshu.io/upload_images/1085173-5d21ffa924ec2afa.gif?imageMogr2/auto-orient/strip)
+
 `JXMarqueeType.reverse`：reverse
 
-![left.gif](https://upload-images.jianshu.io/upload_images/1085173-712f04ce62c1a3bc.gif?imageMogr2/auto-orient/strip)![right.gif](https://upload-images.jianshu.io/upload_images/1085173-5d21ffa924ec2afa.gif?imageMogr2/auto-orient/strip)![reverse.gif](https://upload-images.jianshu.io/upload_images/1085173-acffb41b6479bf1a.gif?imageMogr2/auto-orient/strip)
+![reverse.gif](https://upload-images.jianshu.io/upload_images/1085173-acffb41b6479bf1a.gif?imageMogr2/auto-orient/strip)
 
 # Installation
 
@@ -55,7 +61,7 @@ The view your need to marquee.
 
 When you customize complex content view, you need override `func sizeThatFits(_ size: CGSize) -> CGSize`,and return you correct content size.
 
-## Usage case 
+## Use case 
 ```swift
 //text
 let label = UILabel()
