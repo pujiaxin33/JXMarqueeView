@@ -1,4 +1,4 @@
-# JXMarqueeView
+# JXMarqueeView [![Languages](https://img.shields.io/badge/language-swift4.0.svg?style=plastic)](#) <br/>
 A powerful and easy to use marquee view.
 
 ## 简介
