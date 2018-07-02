@@ -1,4 +1,7 @@
-# JXMarqueeView [![Languages](https://img.shields.io/badge/language-swift4.0.svg?style=plastic)](#) <br/>
+# JXMarqueeView [![languages](https://img.shields.io/badge/language-swift-FF69B4.svg?style=plastic)](https://developer.apple.com/swift/) 
+[![platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=plastic)](#)
+[![cocoapods](https://img.shields.io/badge/cocoapods-supported-4BC51D.svg?style=plastic)](https://cocoapods.org/pods/JXMarqueeView)
+
 A powerful and easy to use marquee view.
 
 ## 简介
