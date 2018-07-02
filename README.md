@@ -1,4 +1,5 @@
-# JXMarqueeView [![languages](https://img.shields.io/badge/language-swift-FF69B4.svg?style=plastic)](https://developer.apple.com/swift/) 
+# JXMarqueeView  
+[![languages](https://img.shields.io/badge/language-swift-FF69B4.svg?style=plastic)](https://developer.apple.com/swift/) 
 [![platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=plastic)](#)
 [![cocoapods](https://img.shields.io/badge/cocoapods-supported-4BC51D.svg?style=plastic)](https://cocoapods.org/pods/JXMarqueeView)
 
