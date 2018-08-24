@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192AD15E212FD16C0031AD46 /* JXMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD15D212FD16C0031AD46 /* JXMarqueeView.swift */; };
+		192AD160212FD2A00031AD46 /* JXMarqueeCopyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD15F212FD2A00031AD46 /* JXMarqueeCopyable.swift */; };
+		192AD162212FD4840031AD46 /* UIView+Copyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD161212FD4840031AD46 /* UIView+Copyable.swift */; };
+		192AD169212FFD660031AD46 /* CustomCopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD168212FFD660031AD46 /* CustomCopyViewController.swift */; };
+		192AD16B212FFD780031AD46 /* CustomCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD16A212FFD780031AD46 /* CustomCopyView.swift */; };
 		19F166E820968DC000C2C03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F166E720968DC000C2C03F /* AppDelegate.swift */; };
 		19F166EA20968DC000C2C03F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F166E920968DC000C2C03F /* ViewController.swift */; };
 		19F166ED20968DC000C2C03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F166EB20968DC000C2C03F /* Main.storyboard */; };
 		19F166EF20968DC100C2C03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F166EE20968DC100C2C03F /* Assets.xcassets */; };
 		19F166F220968DC100C2C03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F166F020968DC100C2C03F /* LaunchScreen.storyboard */; };
-		19F166FB20968DD300C2C03F /* JXMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F166FA20968DD300C2C03F /* JXMarqueeView.swift */; };
 		19F166FD2098632D00C2C03F /* MarqueeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F166FC2098632D00C2C03F /* MarqueeViewController.swift */; };
 		19F167012098689800C2C03F /* MarqueeImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F167002098689800C2C03F /* MarqueeImageViewViewController.swift */; };
 		19F1670320994B6800C2C03F /* haizeiwang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 19F1670220994B6800C2C03F /* haizeiwang.jpeg */; };
@@ -27,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192AD15D212FD16C0031AD46 /* JXMarqueeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMarqueeView.swift; sourceTree = "<group>"; };
+		192AD15F212FD2A00031AD46 /* JXMarqueeCopyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXMarqueeCopyable.swift; sourceTree = "<group>"; };
+		192AD161212FD4840031AD46 /* UIView+Copyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Copyable.swift"; sourceTree = "<group>"; };
+		192AD168212FFD660031AD46 /* CustomCopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCopyViewController.swift; sourceTree = "<group>"; };
+		192AD16A212FFD780031AD46 /* CustomCopyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCopyView.swift; sourceTree = "<group>"; };
 		19F166E420968DC000C2C03F /* JXMarqueeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXMarqueeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F166E720968DC000C2C03F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F166E920968DC000C2C03F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +43,6 @@
 		19F166EE20968DC100C2C03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19F166F120968DC100C2C03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19F166F320968DC100C2C03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19F166FA20968DD300C2C03F /* JXMarqueeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMarqueeView.swift; sourceTree = "<group>"; };
 		19F166FC2098632D00C2C03F /* MarqueeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeViewController.swift; sourceTree = "<group>"; };
 		19F167002098689800C2C03F /* MarqueeImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeImageViewViewController.swift; sourceTree = "<group>"; };
 		19F1670220994B6800C2C03F /* haizeiwang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haizeiwang.jpeg; sourceTree = "<group>"; };
@@ -59,6 +67,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192AD15C212FD16C0031AD46 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				192AD15D212FD16C0031AD46 /* JXMarqueeView.swift */,
+				192AD15F212FD2A00031AD46 /* JXMarqueeCopyable.swift */,
+				192AD161212FD4840031AD46 /* UIView+Copyable.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
 		19F166DB20968DC000C2C03F = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +96,7 @@
 		19F166E620968DC000C2C03F /* JXMarqueeView */ = {
 			isa = PBXGroup;
 			children = (
-				19F166F920968DD300C2C03F /* JXMarqueeView */,
+				192AD15C212FD16C0031AD46 /* Sources */,
 				19F166E720968DC000C2C03F /* AppDelegate.swift */,
 				19F166E920968DC000C2C03F /* ViewController.swift */,
 				19F166FC2098632D00C2C03F /* MarqueeViewController.swift */,
@@ -86,19 +104,13 @@
 				19F167082099535200C2C03F /* CustomViewController.swift */,
 				19F1670420994FD500C2C03F /* CustomView.swift */,
 				19F167062099505D00C2C03F /* UILabel+VerticalText.swift */,
+				192AD168212FFD660031AD46 /* CustomCopyViewController.swift */,
+				192AD16A212FFD780031AD46 /* CustomCopyView.swift */,
 				19F166EB20968DC000C2C03F /* Main.storyboard */,
 				19F166EE20968DC100C2C03F /* Assets.xcassets */,
 				19F166F020968DC100C2C03F /* LaunchScreen.storyboard */,
 				19F166F320968DC100C2C03F /* Info.plist */,
 				19F1670A2099646C00C2C03F /* Assets */,
-			);
-			path = JXMarqueeView;
-			sourceTree = "<group>";
-		};
-		19F166F920968DD300C2C03F /* JXMarqueeView */ = {
-			isa = PBXGroup;
-			children = (
-				19F166FA20968DD300C2C03F /* JXMarqueeView.swift */,
 			);
 			path = JXMarqueeView;
 			sourceTree = "<group>";
@@ -193,12 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F166FB20968DD300C2C03F /* JXMarqueeView.swift in Sources */,
+				192AD16B212FFD780031AD46 /* CustomCopyView.swift in Sources */,
 				19F166FD2098632D00C2C03F /* MarqueeViewController.swift in Sources */,
+				192AD169212FFD660031AD46 /* CustomCopyViewController.swift in Sources */,
+				192AD160212FD2A00031AD46 /* JXMarqueeCopyable.swift in Sources */,
 				19F167012098689800C2C03F /* MarqueeImageViewViewController.swift in Sources */,
 				19F167072099505D00C2C03F /* UILabel+VerticalText.swift in Sources */,
 				19F1670520994FD500C2C03F /* CustomView.swift in Sources */,
+				192AD162212FD4840031AD46 /* UIView+Copyable.swift in Sources */,
 				19F166EA20968DC000C2C03F /* ViewController.swift in Sources */,
+				192AD15E212FD16C0031AD46 /* JXMarqueeView.swift in Sources */,
 				19F166E820968DC000C2C03F /* AppDelegate.swift in Sources */,
 				19F167092099535200C2C03F /* CustomViewController.swift in Sources */,
 			);

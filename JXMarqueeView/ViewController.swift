@@ -40,7 +40,11 @@ class ViewController: UITableViewController {
             self.navigationController?.pushViewController(marqueeVC, animated: true)
         case 4:
             let marqueeVC = CustomViewController()
-            marqueeVC.title = "自定义"
+            marqueeVC.title = "自定义视图"
+            self.navigationController?.pushViewController(marqueeVC, animated: true)
+        case 5:
+            let marqueeVC = CustomCopyViewController()
+            marqueeVC.title = "自定义拷贝方法"
             self.navigationController?.pushViewController(marqueeVC, animated: true)
         default:
             break

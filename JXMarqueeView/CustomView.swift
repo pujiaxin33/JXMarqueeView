@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomView: UIView {
+class CustomView: UIView{
     var poetry: [String]?
 
     init() {
