@@ -20,7 +20,7 @@ class CustomCopyView: UIView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        //一定要实现该方法，拷贝的时候，调用NSKeyedUnarchiver.unarchiveObject(with: archivedData)方法，会调用该方法
+        //方案1、实现该方法，拷贝的时候，调用NSKeyedUnarchiver.unarchiveObject(with: archivedData)方法，会调用该方法
         initializeViews()
     }
 
@@ -50,8 +50,9 @@ class CustomCopyView: UIView {
         shadowView?.frame = CGRect(x: self.bounds.size.width - 30 - 10, y: 10, width: 30, height: 30)
     }
 
-    //如果要对拷贝视图进行特殊操作，就重写该方法进行自定义返回
+    //方案2、如果没有实现required init?(coder aDecoder: NSCoder)方法
+    //且要对拷贝视图进行特殊操作，就重写该方法进行自定义返回，不能返回自己，要重新生成一份实例
 //    override func copyMarqueeView() -> UIView {
-//
+//        return CustomCopyView(frame: self.frame)
 //    }
 }

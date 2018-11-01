@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		192AD15E212FD16C0031AD46 /* JXMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD15D212FD16C0031AD46 /* JXMarqueeView.swift */; };
-		192AD160212FD2A00031AD46 /* JXMarqueeCopyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD15F212FD2A00031AD46 /* JXMarqueeCopyable.swift */; };
-		192AD162212FD4840031AD46 /* UIView+Copyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD161212FD4840031AD46 /* UIView+Copyable.swift */; };
 		192AD169212FFD660031AD46 /* CustomCopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD168212FFD660031AD46 /* CustomCopyViewController.swift */; };
 		192AD16B212FFD780031AD46 /* CustomCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AD16A212FFD780031AD46 /* CustomCopyView.swift */; };
 		19F166E820968DC000C2C03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F166E720968DC000C2C03F /* AppDelegate.swift */; };
@@ -32,8 +30,6 @@
 
 /* Begin PBXFileReference section */
 		192AD15D212FD16C0031AD46 /* JXMarqueeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMarqueeView.swift; sourceTree = "<group>"; };
-		192AD15F212FD2A00031AD46 /* JXMarqueeCopyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXMarqueeCopyable.swift; sourceTree = "<group>"; };
-		192AD161212FD4840031AD46 /* UIView+Copyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Copyable.swift"; sourceTree = "<group>"; };
 		192AD168212FFD660031AD46 /* CustomCopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCopyViewController.swift; sourceTree = "<group>"; };
 		192AD16A212FFD780031AD46 /* CustomCopyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCopyView.swift; sourceTree = "<group>"; };
 		19F166E420968DC000C2C03F /* JXMarqueeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXMarqueeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				192AD15D212FD16C0031AD46 /* JXMarqueeView.swift */,
-				192AD15F212FD2A00031AD46 /* JXMarqueeCopyable.swift */,
-				192AD161212FD4840031AD46 /* UIView+Copyable.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -208,11 +202,9 @@
 				192AD16B212FFD780031AD46 /* CustomCopyView.swift in Sources */,
 				19F166FD2098632D00C2C03F /* MarqueeViewController.swift in Sources */,
 				192AD169212FFD660031AD46 /* CustomCopyViewController.swift in Sources */,
-				192AD160212FD2A00031AD46 /* JXMarqueeCopyable.swift in Sources */,
 				19F167012098689800C2C03F /* MarqueeImageViewViewController.swift in Sources */,
 				19F167072099505D00C2C03F /* UILabel+VerticalText.swift in Sources */,
 				19F1670520994FD500C2C03F /* CustomView.swift in Sources */,
-				192AD162212FD4840031AD46 /* UIView+Copyable.swift in Sources */,
 				19F166EA20968DC000C2C03F /* ViewController.swift in Sources */,
 				192AD15E212FD16C0031AD46 /* JXMarqueeView.swift in Sources */,
 				19F166E820968DC000C2C03F /* AppDelegate.swift in Sources */,
