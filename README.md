@@ -27,6 +27,11 @@ A powerful and easy to use marquee view.
 
 ![reverse.gif](https://upload-images.jianshu.io/upload_images/1085173-acffb41b6479bf1a.gif?imageMogr2/auto-orient/strip)
 
+# Requirements
+
+- XCode 9.0+ 
+- Swift 4.0+
+
 # Installation
 
 1. Manually
