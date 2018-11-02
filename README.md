@@ -88,6 +88,16 @@ marqueeView.marqueeType = .reverse
 self.view.addSubview(marqueeView)
 ```
 
+## Customize
+
+The default implementation of contentView's copy using code:
+```
+let archivedData = NSKeyedArchiver.archivedData(withRootObject: self)
+let copyView = NSKeyedUnarchiver.unarchiveObject(with: archivedData) as! UIView
+```
+But if the view has cornerRadius、shadow, the copyView will lose it. So you should implement `protocol JXMarqueeViewCopyable` function `func copyMarqueeView() -> UIView`. Just return a new instance UIView.
+Just checkout `CustomCopyView.swift` in example.
+
 ### Picture case preview
 ![picture.gif](https://github.com/pujiaxin33/JXMarqueeView/blob/master/JXMarqueeView/Assets/picture.gif?raw=true)
 
