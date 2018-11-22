@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JXMarqueeView"
-  s.version      = "0.0.5"
+  s.version = "0.0.6"
   s.summary      = "A powerful and easy to use marquee view."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/pujiaxin33/JXMarqueeView.git", :tag => "#{s.version}" }
+$newDesc
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
