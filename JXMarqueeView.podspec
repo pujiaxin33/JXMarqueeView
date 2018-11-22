@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JXMarqueeView"
-  s.version = "0.0.6"
+  s.version = "0.0.7"
   s.summary      = "A powerful and easy to use marquee view."
 
   # This description is used to generate tags and improve search results.
