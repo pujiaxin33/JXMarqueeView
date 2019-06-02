@@ -139,7 +139,7 @@ public class JXMarqueeView: UIView {
 
         self.marqueeDisplayLink = CADisplayLink.init(target: self, selector: #selector(processMarquee))
         self.marqueeDisplayLink?.frameInterval = self.frameInterval
-        self.marqueeDisplayLink?.add(to: RunLoop.main, forMode: .commonModes)
+        self.marqueeDisplayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
     }
 
    fileprivate  func stopMarquee()  {
