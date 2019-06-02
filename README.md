@@ -30,7 +30,7 @@ A powerful and easy to use marquee view.
 # Requirements
 
 - XCode 9.0+ 
-- Swift 4.0+
+- Swift 5.0+ (greater or equal 0.0.8 version)
 
 # Installation
 
