@@ -20,6 +20,7 @@ public protocol JXMarqueeViewCopyable {
 
 extension UIView: JXMarqueeViewCopyable {
     @objc public func copyMarqueeView() -> UIView {
+        //UIView是没有遵从拷贝协议的。可以通过UIView支持NSCoding协议，间接来复制一个视图
         let archivedData = NSKeyedArchiver.archivedData(withRootObject: self)
         let copyView = NSKeyedUnarchiver.unarchiveObject(with: archivedData) as! UIView
         return copyView
@@ -47,12 +48,8 @@ public class JXMarqueeView: UIView {
     private var marqueeDisplayLink: CADisplayLink?
     private var isReversing = false
 
-    deinit {
-        contentViewFrameConfigWhenCantMarquee = nil
-    }
-
     override open func willMove(toSuperview newSuperview: UIView?) {
-        //骚操作：当视图将被移除父视图的时候，newSuperview就为nil。在这个时候，停止掉CADisplayLink，断开循环引用，视图就可以被正确释放掉了。
+        //当视图将被移除父视图的时候，newSuperview就为nil。在这个时候，停止掉CADisplayLink，断开循环引用，视图就可以被正确释放掉了。
         if newSuperview == nil {
             self.stopMarquee()
         }
@@ -90,15 +87,13 @@ public class JXMarqueeView: UIView {
         guard let validContentView = contentView else {
             return
         }
-        for view in containerView.subviews {
-            view.removeFromSuperview()
-        }
+        containerView.subviews.forEach {$0.removeFromSuperview() }
 
         //对于复杂的视图，需要自己重写contentView的sizeThatFits方法，返回正确的size
         validContentView.sizeToFit()
         containerView.addSubview(validContentView)
 
-        if marqueeType == .reverse{
+        if marqueeType == .reverse {
             containerView.frame = CGRect(x: 0, y: 0, width: validContentView.bounds.size.width, height: self.bounds.size.height)
         }else {
             containerView.frame = CGRect(x: 0, y: 0, width: validContentView.bounds.size.width*2 + contentMargin, height: self.bounds.size.height)
@@ -107,12 +102,10 @@ public class JXMarqueeView: UIView {
         if validContentView.bounds.size.width > self.bounds.size.width {
             validContentView.frame = CGRect(x: 0, y: 0, width: validContentView.bounds.size.width, height: self.bounds.size.height)
             if marqueeType != .reverse {
-                //骚操作：UIView是没有遵从拷贝协议的。可以通过UIView支持NSCoding协议，间接来复制一个视图
                 let otherContentView = validContentView.copyMarqueeView()
                 otherContentView.frame = CGRect(x: validContentView.bounds.size.width + contentMargin, y: 0, width: validContentView.bounds.size.width, height: self.bounds.size.height)
                 containerView.addSubview(otherContentView)
             }
-
             self.startMarquee()
         }else {
             if contentViewFrameConfigWhenCantMarquee != nil {
