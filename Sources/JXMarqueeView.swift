@@ -19,7 +19,7 @@ public protocol JXMarqueeViewCopyable {
 }
 
 extension UIView: JXMarqueeViewCopyable {
-    @objc public func copyMarqueeView() -> UIView {
+    @objc open func copyMarqueeView() -> UIView {
         //UIView是没有遵从拷贝协议的。可以通过UIView支持NSCoding协议，间接来复制一个视图
         let archivedData = NSKeyedArchiver.archivedData(withRootObject: self)
         let copyView = NSKeyedUnarchiver.unarchiveObject(with: archivedData) as! UIView
