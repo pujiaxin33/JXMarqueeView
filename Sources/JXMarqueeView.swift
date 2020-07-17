@@ -106,7 +106,10 @@ public class JXMarqueeView: UIView {
                 otherContentView.frame = CGRect(x: validContentView.bounds.size.width + contentMargin, y: 0, width: validContentView.bounds.size.width, height: self.bounds.size.height)
                 containerView.addSubview(otherContentView)
             }
-            self.startMarquee()
+
+            if self.bounds.size.width != 0 {
+                self.startMarquee()
+            }
         }else {
             if contentViewFrameConfigWhenCantMarquee != nil {
                 contentViewFrameConfigWhenCantMarquee!(validContentView)
