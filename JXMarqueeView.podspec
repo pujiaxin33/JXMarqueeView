@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JXMarqueeView"
-  s.version = "0.0.9"
+  s.version = "0.1.0"
   s.summary      = "A powerful and easy to use marquee view."
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "10.0"
 
   s.swift_version = "5.0"
 
@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
-  s.tvos.deployment_target = "9.0"
+  s.tvos.deployment_target = "10.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
